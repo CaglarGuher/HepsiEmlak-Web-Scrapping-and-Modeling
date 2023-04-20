@@ -164,21 +164,12 @@ Neural networks can be a powerful tool for predicting house prices, but their pe
 - Category-encoders
 - XGBoost
 
-## Dependencies
 
-This project requires the following Python libraries:
-
-- pandas
-- numpy
-- xgboost
-- scikit-learn
-- category_encoders
-- matplotlib
 
 To install these libraries, run the following command:
 
 ```bash
-pip install pandas numpy xgboost scikit-learn category_encoders matplotlib
+pip install pandas numpy xgboost scikit-learn category_encoders matplotlib pytorch 
 ```
 
 
