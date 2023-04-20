@@ -8,6 +8,7 @@ The aim of this project is to clean and preprocess the data, and then perform ex
 ## Dataset
 The dataset used in this project can be found in `total_house_prices.csv`. It contains 33 columns and 33,329 rows. The columns are as follows:
 
+ 
  - City
  - District
  - Neighborhood
