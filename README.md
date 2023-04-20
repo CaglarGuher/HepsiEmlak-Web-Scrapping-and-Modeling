@@ -111,21 +111,76 @@ The R-squared scores for linear regression and XGBoost algorithms were calculate
 
 The R-squared scores for each district were plotted on a scatterplot of the actual versus predicted prices. The scatterplot can be found in the file named `districts.png`.
 
+
+# Phase 2 Modeling
+
+## House Price Prediction using a Neural Network
+
+This project uses a neural network to predict house prices based on various features such as the number of rooms, area, age, and location. The dataset used in this project is preprocessed to remove outliers and encode categorical features using a target encoder.
+
+## Neural Network Architecture
+
+The neural network used in this project is a feedforward neural network with four hidden layers, each with a varying number of neurons. The activation function used in the hidden layers is  AdaptiveTanh , which is a variant of the rectified linear unit (Tanh) activation function.
+
+The AdaptiveReLU activation function has two parameters, alpha and beta, which are learned during training. The function takes the input x and applies the following transformation:
+
+f(x) = tanh(alpha * x + beta)
+
+
+
+The output layer of the neural network has a single neuron, which predicts the price of the house.
+
+## Training the Neural Network
+
+The neural network is trained using the mean squared error (MSE) loss function and the Adam optimizer. The training is performed for 500 epochs with a batch size of 8. The learning rate of the Adam optimizer is set to 0.005.
+
+The neural network consists of four hidden layers with 16, 16, 8, and 8 neurons, respectively. Each hidden layer uses the AdaptiveRelu activation function, which is defined in the AdaptiveRelu class. The output layer consists of a single neuron, which generates the final output of the network.
+
+The training and validation losses are recorded for each epoch, and the performance of the model is evaluated using the R2 score, which measures the proportion of variance in the target variable that is predictable from the input features.
+
+##Tranining With Xgboost
+
+XGBoost Results
+----------------
+The XGBoost model achieved an R2 score of 0.8129 on the filtered dataset, outperforming the neural network's score of 0.7126. This indicates that the XGBoost model can explain 81.29% of the variance in the target variable using the input features, compared to the neural network's 71.26%.
+
+In addition to the R2 score, we can also look at other metrics to evaluate the performance of the XGBoost model. For example, we can look at the mean absolute error (MAE) and the mean squared error (MSE) to get an idea of how much the model's predictions deviate from the actual house prices.
+
+On the filtered dataset, the XGBoost model achieved an MAE of 0.068 and an MSE of 0.011, compared to the neural network's MAE of 0.082 and MSE of 0.016. This indicates that the XGBoost model's predictions are more accurate and have less variance than the neural network's predictions.
+
+Overall, the XGBoost model seems to be a better choice for predicting house prices in this dataset than the neural network.
+
+
+## Results
+
+The neural network achieved an R2 score of 0.7208 on the test set, indicating that the model can explain 72.08% of the variance in the target variable using the input features.
+
+To further evaluate the performance of the model, a filtered dataset was created by removing the outliers using the Z-score method. The filtered dataset was then used to evaluate the performance of the neural network and a gradient boosting model.
+
+The neural network achieved an R2 score of 0.7126 on the filtered dataset, while the gradient boosting model achieved an R2 score of 0.8129. The results suggest that the gradient boosting model may be a better choice for predicting house prices in this dataset. However, it's worth noting that the performance of machine learning models can vary depending on the specific dataset and problem at hand. Therefore, it's important to experiment with different models and evaluate their performance carefully before making a final decision
+
+## Conclusion
+
+In this project, we used a feedforward neural network to predict house prices based on various features. The neural network achieved reasonable performance on the dataset, but was outperformed by a gradient boosting model on a filtered dataset.
+
+Neural networks can be a powerful tool for predicting house prices, but their performance depends on many factors such as the size of the dataset, the quality of the data, and the choice of hyperparameters. Careful experimentation and tuning of the neural network architecture and hyperparameters may lead to improved performance in future projects.
+
 ## Dependencies
 
-This project requires the following Python libraries:
+- Python 3.x
+- PyTorch
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Category-encoders
+- XGBoost
 
-- pandas
-- numpy
-- xgboost
-- scikit-learn
-- category_encoders
-- matplotlib
+
 
 To install these libraries, run the following command:
 
 ```bash
-pip install pandas numpy xgboost scikit-learn category_encoders matplotlib
+pip install pandas numpy xgboost scikit-learn category_encoders matplotlib pytorch 
 ```
 
 
