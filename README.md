@@ -8,49 +8,49 @@ The aim of this project is to clean and preprocess the data, and then perform ex
 ## Dataset
 The dataset used in this project can be found in `total_house_prices.csv`. It contains 33 columns and 33,329 rows. The columns are as follows:
 
-- City
-- District
-- Neighborhood
-- İlan no
-- Son Güncelleme Tarihi
-- Oda + Salon Sayısı
-- Brüt / Net M2
-- Bulunduğu Kat
-- Bina Yaşı
-- Isınma Tipi
-- Kat Sayısı
-- Krediye Uygunluk
-- Eşya Durumu
-- Banyo Sayısı
-- Kullanım Durumu
-- Takas
-- Cephe
-- Rent
-- Tapu Durumu
-- Yapı Tipi
-- Yapının Durumu
-- Aidat
-- Kira Getirisi
-- Yakıt Tipi
-- Yetkili Ofis
-- Site İçerisinde
-- Depozito
-- Kapalı Alan M2
-- Açık Alan M2
-- Bina Sayısı
-- Ada No
-- Parsel No
+ - City
+ - District
+ - Neighborhood
+ - Ad no
+ - Last Update Date
+ - Number of Rooms + Living Room
+ - Gross / Net Area (m²)
+ - Floor Location
+ - Building Age
+ - Heating Type
+ - Number of Floors
+ - Eligibility for Credit
+ - Furniture Condition
+ - Number of Bathrooms
+ - Usage Status
+ - Exchange
+ - Facing
+ - Rent Status
+ - Title Deed Status
+ - Building Type
+ - Building Condition
+ - Dues
+ - Rental Income
+ - Fuel Type
+ - Authorized Office
+ - Within the Site
+ - Deposit
+ - Closed Area (m²)
+ - Open Area (m²)
+ - Number of Buildings
+ - Island Number
+ - Parcel Number
 
 ## Preprocessing
 The following preprocessing steps were performed on the dataset:
 
-- Removed columns that are not relevant for the analysis (`İlan no`, `Son Güncelleme Tarihi`, `Takas`, `Cephe`, `Tapu Durumu`, `Yapı Tipi`, `Yapının Durumu`, `Aidat`, `Kira Getirisi`, `Yakıt Tipi`, `Yetkili Ofis`, `Site İçerisinde`, `Depozito`, `Kapalı Alan M2`, `Açık Alan M2`, `Bina Sayısı`, `Ada No`, `Parsel No`).
+- Removed columns that are not relevant for the analysis (Ad No, Last Update Date, Exchange, Facing, Title Deed Status, Building Type, Building Status, Dues, Rental Income, Fuel Type, Authorized Office, Within Site, Deposit, Indoor Area, Outdoor Area, Number of Buildings, Plot Number, Parcel Number).
 - Removed rows with missing values.
 - Renamed columns to more descriptive names.
-- Grouped the `Bulunduğu Kat` column into categories (`first floor`, `interstage`, `basement`, `top floor`).
+- Grouped the `Floor Location` column into categories (`first floor`, `interstage`, `basement`, `top floor`).
 - Converted the `Age` column to float values.
 - Removed rows with the last six unique `Heat_type` values.
-- Removed rows with the last five unique `Credit_Eli` values.
+- Removed rows with the last five unique `Eligibility for Credit` values.
 - Converted the `Price` column to float values.
 - Converted the `Num_Of_Room` column to integer values.
 - Removed `m2` from `Area` and converted it to integer values.
@@ -63,3 +63,7 @@ The following insights were gained from the exploratory data analysis:
 - The most common heating type is Kombi, with 19,447 houses using this type of heating.
 - The most common usage type is "Boş", meaning empty, with 11,658 houses having this type of usage.
 - The most common credit eligibility is "Uygun", meaning eligible, with 23,550 houses having this eligibility.
+
+# Phase 1 Modeling
+
+
