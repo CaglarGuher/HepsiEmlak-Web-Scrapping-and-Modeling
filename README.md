@@ -44,6 +44,7 @@ The dataset used in this project can be found in `total_house_prices.csv`. It co
 ## Preprocessing
 The following preprocessing steps were performed on the dataset:
 
+
 - Removed columns that are not relevant for the analysis (Ad No, Last Update Date, Exchange, Facing, Title Deed Status, Building Type, Building Status, Dues, Rental Income, Fuel Type, Authorized Office, Within Site, Deposit, Indoor Area, Outdoor Area, Number of Buildings, Plot Number, Parcel Number).
 - Removed rows with missing values.
 - Renamed columns to more descriptive names.
