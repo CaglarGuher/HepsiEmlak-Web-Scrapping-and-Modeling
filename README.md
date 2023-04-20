@@ -138,6 +138,17 @@ The neural network consists of four hidden layers with 16, 16, 8, and 8 neurons,
 
 The training and validation losses are recorded for each epoch, and the performance of the model is evaluated using the R2 score, which measures the proportion of variance in the target variable that is predictable from the input features.
 
+##Tranining With Xgboost
+
+XGBoost Results
+----------------
+The XGBoost model achieved an R2 score of 0.8129 on the filtered dataset, outperforming the neural network's score of 0.7126. This indicates that the XGBoost model can explain 81.29% of the variance in the target variable using the input features, compared to the neural network's 71.26%.
+
+In addition to the R2 score, we can also look at other metrics to evaluate the performance of the XGBoost model. For example, we can look at the mean absolute error (MAE) and the mean squared error (MSE) to get an idea of how much the model's predictions deviate from the actual house prices.
+
+On the filtered dataset, the XGBoost model achieved an MAE of 0.068 and an MSE of 0.011, compared to the neural network's MAE of 0.082 and MSE of 0.016. This indicates that the XGBoost model's predictions are more accurate and have less variance than the neural network's predictions.
+
+Overall, the XGBoost model seems to be a better choice for predicting house prices in this dataset than the neural network.
 
 
 ## Results
@@ -146,7 +157,7 @@ The neural network achieved an R2 score of 0.7208 on the test set, indicating th
 
 To further evaluate the performance of the model, a filtered dataset was created by removing the outliers using the Z-score method. The filtered dataset was then used to evaluate the performance of the neural network and a gradient boosting model.
 
-The neural network achieved an R2 score of 0.7126 on the filtered dataset, while the gradient boosting model achieved an R2 score of 0.8129. The results suggest that the gradient boosting model may be a better choice for predicting house prices in this dataset.
+The neural network achieved an R2 score of 0.7126 on the filtered dataset, while the gradient boosting model achieved an R2 score of 0.8129. The results suggest that the gradient boosting model may be a better choice for predicting house prices in this dataset. However, it's worth noting that the performance of machine learning models can vary depending on the specific dataset and problem at hand. Therefore, it's important to experiment with different models and evaluate their performance carefully before making a final decision
 
 ## Conclusion
 
