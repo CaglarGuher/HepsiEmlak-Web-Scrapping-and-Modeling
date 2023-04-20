@@ -138,7 +138,7 @@ The neural network consists of four hidden layers with 16, 16, 8, and 8 neurons,
 
 The training and validation losses are recorded for each epoch, and the performance of the model is evaluated using the R2 score, which measures the proportion of variance in the target variable that is predictable from the input features.
 
-<p align="center">![Districts](Neural_Network.png)</p>
+![Districts](Neural_Network.png)
 
 
 <p align="center">Predicted vs Actual prices with using Neural Network model.</p>
@@ -154,7 +154,7 @@ In addition to the R2 score, we can also look at other metrics to evaluate the p
 On the filtered dataset, the XGBoost model achieved an MAE of 0.068 and an MSE of 0.011, compared to the neural network's MAE of 0.082 and MSE of 0.016. This indicates that the XGBoost model's predictions are more accurate and have less variance than the neural network's predictions.
 
 Overall, the XGBoost model seems to be a better choice for predicting house prices in this dataset than the neural network.
-<p align="center">![Districts](XgBoost.png)</p> 
+![Districts](XgBoost.png)
 <p align="center">Predicted vs Actual prices with using Xgboost Model.</p>
 
 
