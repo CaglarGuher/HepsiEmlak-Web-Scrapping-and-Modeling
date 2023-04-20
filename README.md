@@ -137,7 +137,10 @@ The neural network is trained using the mean squared error (MSE) loss function a
 The neural network consists of four hidden layers with 16, 16, 8, and 8 neurons, respectively. Each hidden layer uses the AdaptiveRelu activation function, which is defined in the AdaptiveRelu class. The output layer consists of a single neuron, which generates the final output of the network.
 
 The training and validation losses are recorded for each epoch, and the performance of the model is evaluated using the R2 score, which measures the proportion of variance in the target variable that is predictable from the input features.
+
 ![Districts](Neural_Network.png)
+Predicted vs Actual prices with using Neural Network model
+
 ##Tranining With Xgboost
 
 XGBoost Results
@@ -150,6 +153,9 @@ On the filtered dataset, the XGBoost model achieved an MAE of 0.068 and an MSE o
 
 Overall, the XGBoost model seems to be a better choice for predicting house prices in this dataset than the neural network.
 ![Districts](XgBoost.png)
+Predicted vs Actual prices with using Xgboost moddel
+
+
 
 ## Results
 
