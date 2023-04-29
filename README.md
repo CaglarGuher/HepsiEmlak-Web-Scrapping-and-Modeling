@@ -124,7 +124,7 @@ This project uses a neural network to predict house prices based on various feat
 
 The neural network used in this project is a feedforward neural network with four hidden layers, each with a varying number of neurons. The activation function used in the hidden layers is  AdaptiveTanh , which is a variant of the rectified linear unit (Tanh) activation function.
 
-The AdaptiveReLU activation function has two parameters, alpha and beta, which are learned during training. The function takes the input x and applies the following transformation:
+The AdaptiveTanh activation function has two parameters, alpha and beta, which are learned during training. The function takes the input x and applies the following transformation:
 
 f(x) = tanh(alpha * x + beta)
 
