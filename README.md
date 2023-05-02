@@ -8,6 +8,7 @@ The aim of this project is to clean and preprocess the data, and then perform ex
 ## Dataset
 The dataset used in this project can be found in `total_house_prices.csv`. It contains 33 columns and 33,329 rows. The columns are as follows:
 
+ 
  - City
  - District
  - Neighborhood
@@ -43,6 +44,7 @@ The dataset used in this project can be found in `total_house_prices.csv`. It co
 
 ## Preprocessing
 The following preprocessing steps were performed on the dataset:
+
 
 - Removed columns that are not relevant for the analysis (Ad No, Last Update Date, Exchange, Facing, Title Deed Status, Building Type, Building Status, Dues, Rental Income, Fuel Type, Authorized Office, Within Site, Deposit, Indoor Area, Outdoor Area, Number of Buildings, Plot Number, Parcel Number).
 - Removed rows with missing values.
@@ -122,7 +124,7 @@ This project uses a neural network to predict house prices based on various feat
 
 The neural network used in this project is a feedforward neural network with four hidden layers, each with a varying number of neurons. The activation function used in the hidden layers is  AdaptiveTanh , which is a variant of the rectified linear unit (Tanh) activation function.
 
-The AdaptiveReLU activation function has two parameters, alpha and beta, which are learned during training. The function takes the input x and applies the following transformation:
+The AdaptiveTanh activation function has two parameters, alpha and beta, which are learned during training. The function takes the input x and applies the following transformation:
 
 f(x) = tanh(alpha * x + beta)
 
@@ -138,7 +140,12 @@ The neural network consists of four hidden layers with 16, 16, 8, and 8 neurons,
 
 The training and validation losses are recorded for each epoch, and the performance of the model is evaluated using the R2 score, which measures the proportion of variance in the target variable that is predictable from the input features.
 
-##Tranining With Xgboost
+![Districts](Neural_Network.png)
+
+
+<p align="center">Predicted vs Actual prices with using Neural Network model.</p>
+
+## Tranining With Xgboost
 
 XGBoost Results
 ----------------
@@ -149,6 +156,9 @@ In addition to the R2 score, we can also look at other metrics to evaluate the p
 On the filtered dataset, the XGBoost model achieved an MAE of 0.068 and an MSE of 0.011, compared to the neural network's MAE of 0.082 and MSE of 0.016. This indicates that the XGBoost model's predictions are more accurate and have less variance than the neural network's predictions.
 
 Overall, the XGBoost model seems to be a better choice for predicting house prices in this dataset than the neural network.
+![Districts](XgBoost.png)
+<p align="center">Predicted vs Actual prices with using Xgboost Model.</p>
+
 
 
 ## Results
