@@ -3,11 +3,11 @@ To download and test the model  : https://drive.google.com/file/d/1Uo0am49JUeGSQ
 
 ## DATA WITHOUT DISTANCE FEATURES
 
-This section presents a comprehensive analysis of our project on house price prediction in Ankara using regression techniques, neural Network, and extreme gradient boosting with a specific focus on comparing the models results through the utilization of Minitab and Python. Moreover, we presented the overall model results that encompassed data from all districts, enabling a comprehensive understanding of the housing market in Ankara.
+This section presents a comprehensive analysis of our project on house price prediction in Ankara using regression techniques, neural Network, and extreme gradient boosting with a specific focus on comparing the models results through the utilization of Python. Moreover, we presented the overall model results that encompassed data from all districts, enabling a comprehensive understanding of the housing market in Ankara.
 
-By employing this software, we aim to reinforce the credibility and consistency of our results, instilling confidence in the accuracy of our house price predictions in Ankara. With Minitab, we seek to mitigate potential biases or inaccuracies, thus ensuring the validity and robustness of our conclusions.
 
-The process begins with web scraping data from the website "Hepsiemlak" to gather information about houses listed for sale. A total of 1,400 pages were scraped, resulting in the collection of 33,000 houses. The collected features include city, district, neighborhood, listing number, update date, room and living room count, area, floor number, age of the building, heating type, rental income, fuel type, authorized office, presence in a residential complex, deposit, covered area, open area, number of buildings, plot number, and more.
+
+The process begins with web scraping data from the website "Hepsiemlak" to gather information about houses listed for sale. A total of 1,400 pages were scraped . The collected features include city, district, neighborhood, listing number, update date, room and living room count, area, floor number, age of the building, heating type, rental income, fuel type, authorized office, presence in a residential complex, deposit, covered area, open area, number of buildings, plot number, and more.
 
 To prepare the data for modeling, irrelevant and empty features were removed, leaving the following remaining features: district, neighborhood, number of rooms, area, floor number, age, heating type, apartment floor, credit eligibility, presence of items, number of bathrooms, usage, and price.
 
@@ -15,7 +15,7 @@ The correlation of features should be checked because correlation analysis helps
 
 
 ![Figure 1 Correlation Map for the features](figure1.PNG)
-As it can be guessed, the area, the number of bathroom, and the number of floor is highly correlated for the final part, the correlation results will be considered for the feature selection.
+As it can be guessed, the area, the number of bathroom, and the number of floor is highly correlated.For the final part, the correlation results will be considered for the feature selection.
 
 Next, the distribution of the features was examined, and a filtering process was applied using the interquartile range (IQR) method. The lower and upper bounds were calculated based on the first quartile (Q1) and third quartile (Q3). Data points outside this range were filtered out, ensuring a more representative dataset for modeling.
 
@@ -78,7 +78,7 @@ The results demonstrated the effectiveness of the models in capturing the underl
 
 ### DATA WITH DISTANCE FEATURES
 
-We have incorporated distance information into our house price prediction model to account for the impact of location and proximity on property values. By collecting precise distance measurements between locations, we aim to improve the accuracy of our predictions and gain valuable insights into the factors influencing house prices.
+I have incorporated distance information into our house price prediction model to account for the impact of location and proximity on property values. By collecting precise distance measurements between locations, we aim to improve the accuracy of our predictions and gain valuable insights into the factors influencing house prices.
 
 #### Extreme Gradient Boosting
 
