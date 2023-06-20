@@ -15,7 +15,6 @@ The correlation of features should be checked because correlation analysis helps
 
 
 ![Figure 1 Correlation Map for the features](figure1.PNG)
-| *Figure 1 Correlation Map for the feature* |
 As it can be guessed, the area, the number of bathroom, and the number of floor is highly correlated for the final part, the correlation results will be considered for the feature selection.
 
 Next, the distribution of the features was examined, and a filtering process was applied using the interquartile range (IQR) method. The lower and upper bounds were calculated based on the first quartile (Q1) and third quartile (Q3). Data points outside this range were filtered out, ensuring a more representative dataset for modeling.
