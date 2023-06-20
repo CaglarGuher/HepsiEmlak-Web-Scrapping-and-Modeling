@@ -66,7 +66,7 @@ The final result after applying XG Boost was as follows:
 
 To gain insights into the importance of the features, feature importance analysis was conducted. A graph depicting the feature importances was generated, revealing the relative significance of each feature in predicting house prices.
 
-![Figure 9 Feature importance for Xgboost model](figure9.png)
+![Figure 9 Feature importance for Xgboost model](figure9.PNG)
 
 Moreover, a district-wise analysis was performed to assess the success of the XG Boost model in predicting house prices across different districts. A graph illustrating the performance of the model for each district was generated, providing valuable information on the model's accuracy across various geographical areas.
 
