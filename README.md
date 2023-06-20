@@ -13,9 +13,9 @@ To prepare the data for modeling, irrelevant and empty features were removed, le
 
 The correlation of features should be checked because correlation analysis helps identify features that are highly correlated with each other. Having highly correlated features in a predictive model can introduce multicollinearity, which can impact the model's stability and interpretability. By identifying such features, you can choose to remove or consolidate them, reducing complexity and improving the model's performance. Also, correlation analysis helps in feature selection by identifying features that are highly correlated with the target variable. Highly correlated features are generally more informative and have a stronger relationship with the target variable, making them valuable for prediction. Conversely, features with low correlation may not contribute significantly to the model's predictive power and can be excluded.
 
-(figure1.PNG)
-![Figure 1 Correlation Map for the features]
 
+![Figure 1 Correlation Map for the features](figure1.PNG)
+| *Figure 1 Correlation Map for the feature* |
 As it can be guessed, the area, the number of bathroom, and the number of floor is highly correlated for the final part, the correlation results will be considered for the feature selection.
 
 Next, the distribution of the features was examined, and a filtering process was applied using the interquartile range (IQR) method. The lower and upper bounds were calculated based on the first quartile (Q1) and third quartile (Q3). Data points outside this range were filtered out, ensuring a more representative dataset for modeling.
