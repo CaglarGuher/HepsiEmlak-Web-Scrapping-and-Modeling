@@ -44,6 +44,8 @@ The data was then filtered using the lower and upper bounds of the interquartile
 #### Neural Network Implementation
 
 After training the neural network model, the following results were obtained:
+
+
 ![Figure 5 Epoch train and test resuts](figure5.PNG)
 
 R-squared score: 0.6778
