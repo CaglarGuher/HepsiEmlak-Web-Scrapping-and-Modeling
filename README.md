@@ -83,7 +83,11 @@ We have incorporated distance information into our house price prediction model 
 #### Extreme Gradient Boosting
 
 To build an accurate model, Cat Boost, a machine learning algorithm, was employed instead of neural networks due to its superior performance. Cat Boost is an ensemble learning method that belongs to the gradient boosting family, similar to XG Boost. However, Cat Boost incorporates additional features such as handling categorical variables more efficiently and automatically applying the optimal learning rate. By tuning the hyperparameters, the results are shown below.
+
+
 ![Figure 11 CatBoost model results](figure11.PNG)
+
+
 ![Figure 12 Predicted vs Real data with Cat boost Model](figure12.PNG)
 
 After the results, the importance of the features is examined. This part will be helpful for the interface of the model.
